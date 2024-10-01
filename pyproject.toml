@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "moc-ass-2"
+version = "0.1.0"
+description = ""
+authors = ["Will Holdsworth <83637728+wi11-holdsworth@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
