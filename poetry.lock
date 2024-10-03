@@ -35,6 +35,17 @@ files = [
 test = ["pytest"]
 
 [[package]]
+name = "coloraide"
+version = "4.0"
+description = "A color library for Python."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "coloraide-4.0-py3-none-any.whl", hash = "sha256:9de6c0fb352ff66413010b10adb539b623addca54c6fae95862dd9af36968c84"},
+    {file = "coloraide-4.0.tar.gz", hash = "sha256:13efcc3dc3da716b7fd5aaf6e71d9259bb064b10a74888be2a56b6fc49c5e238"},
+]
+
+[[package]]
 name = "frozendict"
 version = "2.4.4"
 description = "A simple immutable dictionary"
@@ -95,6 +106,16 @@ extra = ["lxml (>=4.6)", "pydot (>=2.0)", "pygraphviz (>=1.12)", "sympy (>=1.10)
 test = ["pytest (>=7.2)", "pytest-cov (>=4.0)"]
 
 [[package]]
+name = "pygraphviz"
+version = "1.14"
+description = "Python interface to Graphviz"
+optional = false
+python-versions = ">=3.10"
+files = [
+    {file = "pygraphviz-1.14.tar.gz", hash = "sha256:c10df02377f4e39b00ae17c862f4ee7e5767317f1c6b2dfd04cea6acc7fc2bea"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.12.2"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -108,4 +129,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "590b16d1689d9cdccee9a8ca88ef672b77599200adc7ffa79bfde942d1d6e791"
+content-hash = "f75e9c157d45bc1bbb6bdab3d07f9c3a12aafffebe957bfb4a45c321538b18b2"

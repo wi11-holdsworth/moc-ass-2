@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 automata-lib = "^8.4.0"
+coloraide = "^4.0"
+pygraphviz = "^1.14"
 
 
 [build-system]
