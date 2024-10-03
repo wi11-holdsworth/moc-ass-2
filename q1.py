@@ -16,4 +16,4 @@ def q1a() -> DFA:
 
 
 def q1b() -> str:
-    return
+    return "((00)*1*)*"
