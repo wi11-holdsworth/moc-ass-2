@@ -90,9 +90,9 @@ def q2b(a: DFA, b: DFA) -> NFA:
     a, _ = make_state_ids_unique(a)
     b, _ = make_state_ids_unique(b)
 
-    all_b_states: set[str] = {}
-    all_a_states: set[str] = {}
-    all_a_final_states: set[str] = {}
+    all_b_states: set[str] = set()
+    all_a_states: set[str] = set()
+    all_a_final_states: set[str] = set()
 
     trans: dict[str, dict[str, set]] = dict()
     trans.update(convert_dfa_trans_to_nfa_trans(a.transitions))
@@ -100,11 +100,11 @@ def q2b(a: DFA, b: DFA) -> NFA:
     for a_state in a.states:
         # create unique copy of DFA b and track its transitions and states for the NFA
         b_copy, _ = make_state_ids_unique(b.copy())
-        trans.update(convert_dfa_trans_to_nfa_trans(b_copy.trans))
+        trans.update(convert_dfa_trans_to_nfa_trans(b_copy.transitions))
         all_b_states.update(b_copy.states)
 
         # epsilon transition from state in a to a complete copy of b
-        trans[a_state][""] = {b.initial_state}
+        trans[a_state][""] = {b_copy.initial_state}
 
         # create unique copy of DFA a and track its transitions and states for the NFA
         a_copy, mapping = make_state_ids_unique(a.copy())
