@@ -36,6 +36,6 @@ def q3b() -> list[tuple[str, list[str]]]:
     return [
         ("S", ["A", "C"]),
         ("A", ["bSa", "aSa"]),
-        ("B", ["aa", "ab", "bb", "ba", "BB", ""])
-        ("C", ["aBb", "bBb"])
+        ("B", ["aa", "ab", "bb", "ba", "BB", ""]),
+        ("C", ["aBb", "bBb"]),
     ]
