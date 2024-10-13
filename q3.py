@@ -34,8 +34,8 @@ def q3a() -> NPDA:
 
 def q3b() -> list[tuple[str, list[str]]]:
     return [
-        ("A", ["BC"]),
-        ("B", ["a", "b", "BB"]),
-        ("C", ["DbD"]),
-        ("D", ["a", "b", "", "DD"]),
+        ("S", ["A", "C"]),
+        ("A", ["bSa", "aSa"]),
+        ("B", ["aa", "ab", "bb", "ba", "BB", ""])
+        ("C", ["aBb", "bBb"])
     ]
